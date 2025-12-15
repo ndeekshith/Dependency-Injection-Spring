@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 public record Movie(
         Integer id,
         String name,
+        String slug,
         String genre,
         Double rating,
         LocalDateTime releaseDate) {
