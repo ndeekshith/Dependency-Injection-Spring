@@ -17,8 +17,8 @@ public class Moviecontroller {
 
     private final MovieRepository movieRepository;
 
-    public Moviecontroller() {
-        this.movieRepository = new MovieRepository();
+    public Moviecontroller(MovieRepository movieRepository) {
+        this.movieRepository = movieRepository;
     }
 
     @GetMapping

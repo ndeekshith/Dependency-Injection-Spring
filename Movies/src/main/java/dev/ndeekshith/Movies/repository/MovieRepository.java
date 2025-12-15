@@ -15,8 +15,8 @@ public class MovieRepository {
     private List<Movie> movies;
     private final SlugService slugService;
 
-    public MovieRepository() {
-        this.slugService = new SimpleSlugService();
+    public MovieRepository(SlugService slugService) {
+        this.slugService = slugService;
         this.movies = List.of(
                 new Movie(1, "The Shawshank Redemption",slugService.slugify("The Shawshank Redemption"), "Drama", 9.3, LocalDateTime.of(1994, 10, 14, 0, 0)),
                 new Movie(2, "The Godfather", slugService.slugify("The Godfather"), "Crime", 9.2, LocalDateTime.of(1972, 3, 24, 0, 0)),

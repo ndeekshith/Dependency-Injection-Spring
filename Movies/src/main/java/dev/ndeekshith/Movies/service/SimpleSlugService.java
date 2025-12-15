@@ -1,5 +1,8 @@
 package dev.ndeekshith.Movies.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class SimpleSlugService implements SlugService {
 
     @Override
